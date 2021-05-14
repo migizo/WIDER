@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="BKQmn4" name="WIDER" projectType="audioplug" useAppConfig="0"
+              jucerFormatVersion="1" companyName="REVISTA" companyWebsite="https://revista-products.info/"
+              companyEmail="revista.products@gmail.com" pluginManufacturerCode="RVST"
+              pluginCode="Wide">
+  <MAINGROUP id="g38ohF" name="WIDER">
+    <FILE id="DsPBZF" name="TextEditorAttachment.cpp" compile="1" resource="0"
+          file="Source/TextEditorAttachment.cpp"/>
+    <FILE id="UqQ4sj" name="TextEditorAttachment.h" compile="0" resource="0"
+          file="Source/TextEditorAttachment.h"/>
+    <FILE id="ouqkxw" name="Ease.h" compile="0" resource="0" file="Source/Ease.h"/>
+    <GROUP id="{A4D5E18F-6E7A-42EA-CD50-3D39740F85FC}" name="Shader">
+      <FILE id="byC2sE" name="OpenGLComponent.cpp" compile="1" resource="0"
+            file="Source/OpenGLComponent.cpp"/>
+      <FILE id="DxflYk" name="OpenGLComponent.h" compile="0" resource="0"
+            file="Source/OpenGLComponent.h"/>
+    </GROUP>
+    <GROUP id="{1DAC8DBF-A478-E631-BED5-1AD9F89117E2}" name="Source">
+      <FILE id="tUB7iE" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="qf2g32" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="j7W5Pz" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="nztJC0" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="Go3Lko" name="GuiComponent.cpp" compile="1" resource="0"
+            file="Source/GuiComponent.cpp"/>
+      <FILE id="rEAuXy" name="GuiComponent.h" compile="0" resource="0" file="Source/GuiComponent.h"/>
+    </GROUP>
+    <GROUP id="{1350560F-CD52-A771-56F4-77D03107E780}" name="Knob">
+      <FILE id="nZiLW0" name="Knob.cpp" compile="1" resource="0" file="Source/Knob/Knob.cpp"/>
+      <FILE id="SfDJtL" name="Knob.h" compile="0" resource="0" file="Source/Knob/Knob.h"/>
+      <FILE id="SBGE5r" name="KnobResource.h" compile="0" resource="0" file="Source/Knob/KnobResource.h"/>
+    </GROUP>
+    <FILE id="ZxuX0M" name="AttachedControlBase.h" compile="0" resource="0"
+          file="Source/AttachedControlBase.h"/>
+    <FILE id="AFXJsC" name="AnimatorByCount.h" compile="0" resource="0"
+          file="Source/AnimatorByCount.h"/>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2017 targetFolder="Builds/VisualStudio2017">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="WIDER"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="WIDER"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../modules"/>
+        <MODULEPATH id="juce_core" path="../../modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../modules"/>
+        <MODULEPATH id="juce_events" path="../../modules"/>
+        <MODULEPATH id="juce_graphics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../modules"/>
+        <MODULEPATH id="juce_dsp" path="../../modules"/>
+        <MODULEPATH id="juce_opengl" path="../../modules"/>
+      </MODULEPATHS>
+    </VS2017>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="WIDER"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="WIDER"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../modules"/>
+        <MODULEPATH id="juce_core" path="../../modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../modules"/>
+        <MODULEPATH id="juce_events" path="../../modules"/>
+        <MODULEPATH id="juce_graphics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../modules"/>
+        <MODULEPATH id="juce_dsp" path="../../modules"/>
+        <MODULEPATH id="juce_opengl" path="../../modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <OSX/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>
